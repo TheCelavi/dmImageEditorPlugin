@@ -1,0 +1,8 @@
+Tools:
+
+  Media:
+
+    dmImageEditor:
+      name:                 Image editor
+      credentials:          media_library
+      front:                false

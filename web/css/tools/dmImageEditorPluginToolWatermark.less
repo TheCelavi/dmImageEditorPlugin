@@ -1,0 +1,35 @@
+@import "../elements.less";
+@import "../dmImageEditorPluginVars.less";
+.dm {
+    &.dmImageEditorPlugin {
+        div.dmImageEditorPluginTool.watermark {
+            div.watermark_drop {
+                width: 95%;
+                height: 30px;
+                border: solid 1px @borderColor;
+                .rounded(@radius);
+                text-align: center;
+                padding-top: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;    
+                margin-left: auto;
+                margin-right: auto;
+                .gradient(@backgroundColor, darken(@backgroundColor, 10%), @backgroundColor);
+                &.hover-state {
+                    .hover-state();
+                }
+            }    
+        }
+        div.watermark_wrapper {
+            position: relative;
+            img.watermark_image {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                &.ui-draggable {
+                    cursor: move;
+                }
+            }
+        }
+    }
+}

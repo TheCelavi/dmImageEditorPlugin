@@ -1,0 +1,35 @@
+parameters:
+
+  image_editor.class:       dmImageEditorService
+  image_editor.options:
+    skin:               default
+  
+  image_editor_transform_crop.class:        dmImageEditorTransformersCrop 
+  image_editor_transform_rotate.class:      dmImageEditorTransformersRotate
+  image_editor_transform_resize.class:      dmImageEditorTransformersResize
+  image_editor_transform_watermark.class:   dmImageEditorTransformersWatermark
+
+services:
+
+  image_editor:
+    class:                %image_editor.class%
+    shared:               false
+    arguments:            [ %image_editor.options% ]
+  
+  image_editor_transform_crop:
+    class:                %image_editor_transform_crop.class%
+    shared:               true
+    arguments:            []
+  image_editor_transform_rotate:
+    class:                %image_editor_transform_rotate.class%
+    shared:               true
+    arguments:            []
+  image_editor_transform_resize:
+    class:                %image_editor_transform_resize.class%
+    shared:               true
+    arguments:            []
+  image_editor_transform_watermark:
+    class:                %image_editor_transform_watermark.class%
+    shared:               true
+    arguments:            []  
+  

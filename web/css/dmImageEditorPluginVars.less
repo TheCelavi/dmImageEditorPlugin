@@ -1,0 +1,33 @@
+@radius: 5px;
+@padding: 5px;
+@borderColor: #999;
+@backgroundColor: #EEE;
+
+@canvasImage: '../images/background.png';
+
+.hover-state() {
+    background-image: linear-gradient(bottom, #EAF8EA 2%, #E9F7E9 51%, #EAF8EA 76%);
+    background-image: -o-linear-gradient(bottom, #EAF8EA 2%, #E9F7E9 51%, #EAF8EA 76%);
+    background-image: -moz-linear-gradient(bottom, #EAF8EA 2%, #E9F7E9 51%, #EAF8EA 76%);
+    background-image: -webkit-linear-gradient(bottom, #EAF8EA 2%, #E9F7E9 51%, #EAF8EA 76%);
+    background-image: -ms-linear-gradient(bottom, #EAF8EA 2%, #E9F7E9 51%, #EAF8EA 76%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.02, #EAF8EA),
+            color-stop(0.51, #E9F7E9),
+            color-stop(0.76, #EAF8EA)
+    );
+}
+
+.box() {
+    border: solid 1px @borderColor;
+    .rounded(@radius);
+    padding: @radius;
+}
+
+.button () {
+    padding: @radius;
+}

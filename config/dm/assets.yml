@@ -1,0 +1,16 @@
+js:
+  dmImageEditorPlugin:
+    imageEditor:  dmImageEditorPlugin
+    launch:       launch
+    resize:       tools/dmImageEditorPluginToolResize
+    jcrop:        lib/jcrop/jquery.jcrop.min
+    crop:         tools/dmImageEditorPluginToolCrop
+    rotate:       tools/dmImageEditorPluginToolRotate
+    watermark:    tools/dmImageEditorPluginToolWatermark
+    
+css:
+  dmImageEditorPlugin:
+    imageEditor:  dmImageEditorPlugin
+    jcrop:        lib/jcrop/jquery.jcrop.min
+    watermark:    tools/dmImageEditorPluginToolWatermark
+    

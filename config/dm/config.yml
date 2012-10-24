@@ -1,0 +1,69 @@
+default:
+  dmImageEditorPlugin:
+    view:
+      js:
+        crop:
+          - dmImageEditorPlugin.jcrop
+          - dmImageEditorPlugin.crop
+        rotate:
+          - dmImageEditorPlugin.rotate
+        resize:
+          - dmImageEditorPlugin.resize
+        watermark:
+          - dmImageEditorPlugin.watermark
+        core:
+          - lib.ui-position
+          - lib.ui-dialog          
+          - dmImageEditorPlugin.imageEditor
+          - dmImageEditorPlugin.launch          
+      css:
+        crop:
+          - dmImageEditorPlugin.jcrop
+        watermark:
+          - dmImageEditorPlugin.watermark
+        core:
+          - lib.ui-dialog
+          - dmImageEditorPlugin.imageEditor
+    skins:
+      default:
+        canvas_width:       640px
+        canvas_height:      480px
+        toolBar: "undo|redo|separator|separator|viewport|separator|separator|image-quality|new-line|resize|crop|rotate|watermark"
+        actionBar: "Save as copy|Save|Cancel"
+        buttons:
+          viewport:
+            label: Viewport
+            settings:
+              sizes:
+                640px_480px   :   640x480
+                800px_600px   :   800x600
+                1024px_800px  :   1024x800   
+          image-quality:
+            label: Image quality
+            settings:
+              quality_values:
+                100 : Maximum
+                90  : Very high
+                80  : High
+                70  : Medium
+                50  : Low
+                30  : Very low
+                20  : Poor                
+              default_quality:  90
+          undo:
+            label: Undo
+          redo:
+            label: Redo
+          resize:
+            label: Resize image
+          crop: 
+            label: Crop image
+          rotate:
+            label: Rotate image
+          watermark:
+            label: Add watermark
+        tools:
+          rotate:
+          crop:
+          resize:
+          watermark:

@@ -1,0 +1,52 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.dm.dmImageEditorPlugin div.dmImageEditorPluginTool.watermark div.watermark_drop {
+  width: 95%;
+  height: 30px;
+  border: solid 1px #999999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d5d5d5), color-stop(1, #eeeeee));
+  background: -ms-linear-gradient(bottom, #d5d5d5, #eeeeee);
+  background: -moz-linear-gradient(center bottom, #d5d5d5 0%, #eeeeee 100%);
+}
+.dm.dmImageEditorPlugin div.dmImageEditorPluginTool.watermark div.watermark_drop.hover-state {
+  background-image: linear-gradient(bottom, #eaf8ea 2%, #e9f7e9 51%, #eaf8ea 76%);
+  background-image: -o-linear-gradient(bottom, #eaf8ea 2%, #e9f7e9 51%, #eaf8ea 76%);
+  background-image: -moz-linear-gradient(bottom, #eaf8ea 2%, #e9f7e9 51%, #eaf8ea 76%);
+  background-image: -webkit-linear-gradient(bottom, #eaf8ea 2%, #e9f7e9 51%, #eaf8ea 76%);
+  background-image: -ms-linear-gradient(bottom, #eaf8ea 2%, #e9f7e9 51%, #eaf8ea 76%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.02, #eaf8ea), color-stop(0.51, #e9f7e9), color-stop(0.76, #eaf8ea));
+}
+.dm.dmImageEditorPlugin div.watermark_wrapper {
+  position: relative;
+}
+.dm.dmImageEditorPlugin div.watermark_wrapper img.watermark_image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.dm.dmImageEditorPlugin div.watermark_wrapper img.watermark_image.ui-draggable {
+  cursor: move;
+}
